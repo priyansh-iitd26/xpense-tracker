@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}Terms and Conditions — Spendly{% endblock %}
+
+{% block content %}
+<div class="terms-container">
+    <h1>Terms and Conditions</h1>
+    <p class="last-updated">Last Updated: October 2026</p>
+
+    <section class="terms-section">
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing or using Spendly, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use the service.</p>
+    </section>
+
+    <section class="terms-section">
+        <h2>2. Use of Service</h2>
+        <p>Spendly is provided as a tool for personal expense tracking. You agree to use the service only for lawful purposes and in a manner that does not infringe the rights of others or restrict their use of the service.</p>
+    </section>
+
+    <section class="terms-section">
+        <h2>3. User Data</h2>
+        <p>Your financial data is stored securely. You retain ownership of all data you input into the system. Spendly will not sell your personal financial information to third parties.</p>
+    </section>
+
+    <section class="terms-section">
+        <h2>4. Limitations of Liability</h2>
+        <p>Spendly is provided "as is" without any warranties. We are not responsible for any financial losses, data loss, or errors resulting from the use of our service. Use of the tool is at your own risk.</p>
+    </section>
+
+    <section class="terms-section">
+        <h2>5. Changes to Terms</h2>
+        <p>We reserve the right to modify these terms at any time. Any changes will be effective immediately upon posting to this page. Your continued use of the service constitutes acceptance of the new terms.</p>
+    </section>
+
+    <div class="terms-footer">
+        <a href="{{ url_for('landing') }}" class="btn-ghost">Back to Home</a>
+    </div>
+</div>
+
+<style>
+    .terms-container {
+        max-width: 800px;
+        margin: 4rem auto;
+        padding: 0 1.5rem;
+        line-height: 1.6;
+        color: var(--text-main, #333);
+    }
+    .terms-container h1 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .last-updated {
+        color: #666;
+        font-style: italic;
+        margin-bottom: 2rem;
+    }
+    .terms-section {
+        margin-bottom: 2rem;
+    }
+    .terms-section h2 {
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    .terms-footer {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #eee;
+    }
+</style>
+{% endblock %}
